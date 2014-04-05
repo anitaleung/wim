@@ -1,0 +1,260 @@
+
+/* styles
+*  what is myopia?
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Average);
+
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+@font-face {
+	font-family: Thryomanes;
+	src: url('../fonts/thryomanes.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: Ubuntu-R;
+	src: url('../fonts/ubuntu-r.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: OpenBaskerville;
+	src: url('../fonts/openbaskerville.otf') format("opentype");
+}
+
+
+.background {
+	background: #ebebeb;
+	height: 50px;
+	border: 2px solid white;
+}
+
+.row {
+	max-width: 70em;
+	padding: 0 1em;
+}
+
+
+body {
+	color: #F4EEE9;
+	position: relative;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #F4EEE9;
+	font-family: "Libre Baskerville", Georgia, sans-serif;
+	font-weight: normal;
+}
+
+
+/* - - - background - - - */
+
+#la_cover,
+#la_map,
+#la_info,
+#la_science,
+#la_goal,
+#la_footer {
+	min-height: 100px;
+	position: relative;
+}
+
+/* ----*/
+
+#la_cover,
+#la_info,
+#la_goal {
+	background: #2A363B; 
+	display: relative;
+}
+
+#la_map,
+#la_science {
+	background: #C1272D;
+	min-height: 300px;
+}
+
+#la_footer {
+	background: #4B5254;
+}
+
+/* ----*/
+
+#la_map:before,
+#la_info:before,
+#la_science:before,
+#la_goal:before,
+#la_footer:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: 	-50px;
+	border-top:    50px solid #F7DA9A;
+	border-right:  50px solid transparent;	
+	border-left:   50px solid transparent;
+}
+
+#la_cover:after,
+#la_map:after,
+#la_info:after,
+#la_science:after,
+#la_goal:after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left:  -50px;
+	border-bottom: 50px solid #F7DA9A;
+	border-right:  50px solid transparent;	
+	border-left:   50px solid transparent;
+}
+
+
+
+/* - - - cover - - - */
+
+#la_cover {
+	padding: 15em 0;
+}
+
+	#title {
+		padding: 1em 0;
+		margin: 0;
+	}
+
+	#description {
+		background: #3A4B52;
+		padding: 2em 2em;
+		margin: 0;
+	}
+	
+/* - - - map - - - */
+
+#la_map {
+	padding: 3em 0 2em 0;
+}
+
+	#map-title {
+		font-size: 1.6em;
+		margin: 1em 0;
+	}
+
+	#map {
+		margin: 0 auto;
+		position: relative;
+	}
+	
+		.pointer {
+			font-family: "Libre Baskerville";
+			position: absolute;
+			background: url('../img/pointer_dead.png') no-repeat top left;
+			width: 200px;
+			height: 60px;
+			display: block;
+			list-style-type: none;
+		}
+		
+			.pointer:hover {
+				background: url('../img/pointer_alive.png') no-repeat top left;
+			}
+			
+		#africa {
+			bottom: 39%;
+			left: 51%;
+		}
+		
+			/*.circle {
+				display: none;
+				width: 160px;
+				height: 160px;
+				bottom: 75px;
+				left: -59px;
+				line-height: 7em;
+				text-align: center;
+				font-size: 1.5em;
+				position: absolute;
+				background: #2A363B;
+				border: 2px solid #fff;
+				
+				border-radius: 					 90px;
+					-webkit-border-radius: 90px;
+					-moz-border-radius: 	 90px;
+				
+				box-shadow:         	2px 2px 25px rgba(0, 0, 0, 0.74);
+					-webkit-box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.74);
+					-moz-box-shadow:    2px 2px 25px rgba(0, 0, 0, 0.74);
+
+			}*/
+			
+			#circle_bottom, #circle_top {
+				height: 165px;
+				width: 167px;
+				bottom: 70px;
+				position: absolute;
+			}	
+			
+			
+			#circle_bottom {
+				left: -56px;
+				//background: url('../img/circle_bottom.png') no-repeat top left;
+				/*transition:           All 0.5s ease;
+					-webkit-transition: All 0.5s ease;
+					-moz-transition:    All 0.5s ease;
+					-o-transition:      All 0.5s ease;*/
+			}
+			
+			#circle_top {
+				left: -59px;
+				//background: url('../img/circle_top.png') no-repeat top left;
+				/*transition:           All 0.5s ease;
+					-webkit-transition: All 0.5s ease;
+					-moz-transition:    All 0.5s ease;
+					-o-transition:      All 0.5s ease;*/
+			}
+			
+
+			
+				/*.pointer:hover .circle {
+					display: block;
+				}*/
+				
+				.pointer:hover #circle_bottom {
+					/*transform:           rotate(0deg) scale(1.1) skew(0deg) translate(0px, -10px);
+						-webkit-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px, -10px);
+						-moz-transform:    rotate(0deg) scale(1.1) skew(0deg) translate(0px, -10px);
+						-ms-transform:     rotate(0deg) scale(1.1) skew(0deg) translate(0px, -10px);
+						-o-transform:      rotate(0deg) scale(1.1) skew(0deg) translate(0px, -10px);*/
+				}
+				
+				.pointer:hover #circle_top {
+					/*transform:           rotate(0deg) scale(1.17) skew(0deg) translate( 0px, -10px);
+						-webkit-transform: rotate(0deg) scale(1.17) skew(0deg) translate( 0px, -10px);
+						-moz-transform:    rotate(0deg) scale(1.17) skew(0deg) translate( 0px, -10px);
+						-ms-transform:     rotate(0deg) scale(1.17) skew(0deg) translate( 0px, -10px);
+						-o-transform:      rotate(0deg) scale(1.17) skew(0deg) translate( 0px, -10px);*/
+						
+				}
+				
+				
+				
+				#map span {
+					font-size: 1.5em;
+					/*line-height: 6em;
+					text-align: center;
+					padding-top: 0.9em;*/
+					position: absolute;
+					bottom: 135px;
+					left: -20px;
+					display: block;
+				}
+			
+			
+			
+				
+
+
+
+
+

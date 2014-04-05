@@ -1,0 +1,182 @@
+/* styles
+*  what is myopia?
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Average);
+
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+@font-face {
+	font-family: Thryomanes;
+	src: url('../fonts/thryomanes.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: Ubuntu-R;
+	src: url('../fonts/ubuntu-r.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: OpenBaskerville;
+	src: url('../fonts/openbaskerville.otf') format("opentype");
+}
+
+
+.background {
+	background: #ebebeb;
+	height: 50px;
+	border: 2px solid white;
+}
+
+.row {
+	max-width: 70em;
+}
+
+
+body {
+	color: #F4EEE9;
+	position: relative;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #F4EEE9;
+	font-family: "Libre Baskerville", Georgia, sans-serif;
+	font-weight: normal;
+}
+
+
+/* - - - background - - - */
+
+#la_cover,
+#la_map,
+#la_info,
+#la_science,
+#la_goal,
+#la_footer {
+	min-height: 100px;
+	position: relative;
+}
+
+/* ----*/
+
+#la_cover,
+#la_info,
+#la_goal {
+	background: #2A363B; 
+	display: relative;
+}
+
+#la_map,
+#la_science {
+	background: #C1272D;
+	min-height: 300px;
+}
+
+#la_footer {
+	background: #4B5254;
+}
+
+/* ----*/
+
+#la_map:before,
+#la_info:before,
+#la_science:before,
+#la_goal:before,
+#la_footer:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: 	-50px;
+	border-top:    50px solid #F7DA9A;
+	border-right:  50px solid transparent;	
+	border-left:   50px solid transparent;
+}
+
+#la_cover:after,
+#la_map:after,
+#la_info:after,
+#la_science:after,
+#la_goal:after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left:  -50px;
+	border-bottom: 50px solid #F7DA9A;
+	border-right:  50px solid transparent;	
+	border-left:   50px solid transparent;
+}
+
+
+
+/* - - - cover - - - */
+
+#la_cover {
+	padding: 15em 0;
+}
+
+	#title {
+		padding: 1em 0;
+		margin: 0;
+	}
+
+	#description {
+		background: #3A4B52;
+		padding: 2em 2em;
+		margin: 0;
+	}
+	
+/* - - - map - - - */
+
+#la_map {
+	padding: 3em 0 2em 0;
+}
+
+	#map-title {
+		font-size: 1.6em;
+		margin: 1em 0;
+	}
+
+	#map {
+		margin: 0 auto;
+		position: relative;
+	}
+		
+		.pointer {
+			background: url('../img/pointer.png') no-repeat top left;
+			width: 28px;
+			height: 36px;
+			margin-bottom: 100px;
+		}
+
+			.window p {
+				width: 160px;
+				height: 160px;
+				bottom: 60px;
+				left: -100px;
+				line-height: 7em;
+				text-align: center;
+				font-size: 1.5em;
+				display: block;
+				position: absolute;
+				background: #2A363B;
+				border: 2px solid #fff;
+				
+				border-radius: 					 90px;
+					-webkit-border-radius: 90px;
+					-moz-border-radius: 	 90px;
+				
+				box-shadow:         	2px 2px 25px rgba(0, 0, 0, 0.34);
+					-webkit-box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.34);
+					-moz-box-shadow:    2px 2px 25px rgba(0, 0, 0, 0.34);
+
+			}
+		
+
+
+
+
+
+

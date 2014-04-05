@@ -1,0 +1,414 @@
+
+/* styles
+*  what is myopia?
+*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+
+.background {
+	background: #ebebeb;
+	height: 50px;
+	border: 2px solid white;
+}
+
+body {
+	color: #F4EEE9;
+	position: relative;
+	font-family: "Open Sans", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #F4EEE9;
+	font-family: "Libre Baskerville", Georgia, sans-serif;
+	font-weight: normal;
+}
+
+h2 {
+	font-size:  1.5em;
+	margin-bottom: 1.5em;
+}
+
+p, li {
+	font-size: 1.2em;
+}
+
+li {
+	margin-left: 3em;
+}
+
+figure {
+	margin: 0;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.to {
+	display: table;
+}
+
+.ti {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+/* - - - background - - - */
+
+#la_cover,
+#la_map,
+#la_info,
+#la_proof,
+#la_goal,
+#la_footer {
+	padding: 5em 0;
+	position: relative;
+}
+
+/* background color */
+
+#la_cover,
+#la_info,
+#la_goal {
+	background: #2A363B; 
+	display: relative;
+}
+
+#la_map,
+#la_proof {
+	background: #C1272D;
+	min-height: 300px;
+}
+
+#la_footer {
+	background: #4B5254;
+}
+
+/* diamond */
+
+#la_map:before,
+#la_info:before,
+#la_proof:before,
+#la_goal:before,
+#la_footer:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: 	-50px;
+	border-top:    50px solid #F7DA9A;
+	border-right:  50px solid transparent;	
+	border-left:   50px solid transparent;
+}
+
+#la_cover:after,
+#la_map:after,
+#la_info:after,
+#la_proof:after,
+#la_goal:after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left:  -50px;
+	border-bottom: 50px solid #F7DA9A;
+	border-right:  50px solid transparent;	
+	border-left:   50px solid transparent;
+}
+
+
+
+/* - - - cover - - - */
+
+#la_cover {
+	padding: 15em 0;
+}
+
+	#title {
+		font-size: 2em;
+		margin: 0;
+	}
+	
+/* - - - map - - - */
+
+#la_map {
+}
+
+	#map-title {
+		font-size: 1.6em;
+		padding: 0;
+		margin: 0;
+	}
+
+	#map {
+		margin: 0 auto;
+		position: relative;
+	}
+	
+		.pointer {
+			font-family: "Libre Baskerville";
+			font-size: 1em;
+			position: absolute;
+			background: url('../img/pointer_dead.png') no-repeat top left;
+			width: 47px;
+			height: 60px;
+			display: block;
+			list-style-type: none;
+			margin: 0;
+		}
+		
+			.pointer:hover {
+				background: url('../img/pointer_alive1.png') no-repeat top left;
+			}
+			
+			.region_bottom {
+				left: -61px;
+				bottom: 70px;
+				background: url('../img/region_bottom.png') no-repeat top left;
+				height: 175px;
+				width: 175px;
+				position: absolute;
+				transition:           All 0.7s ease;
+					-webkit-transition: All 0.7s ease;
+					-moz-transition:    All 0.7s ease;
+					-o-transition:      All 0.7s ease;
+			}
+			
+				.region_border {
+					left: -55px;
+					bottom: 78px;
+					height: 160px;
+					width: 160px;
+					position: absolute;
+					
+					transition:           All 0.5s ease;
+						-webkit-transition: All 0.5s ease;
+						-moz-transition:    All 0.5s ease;
+						-o-transition:      All 0.5s ease;
+				}
+				
+					.low {
+						background: url('../img/low.png') no-repeat top left;
+					}
+					
+					.mid-low {
+						background: url('../img/mid-low.png') no-repeat top left;
+					}
+					
+					.mid {
+						background: url('../img/mid.png') no-repeat top left;
+
+					}
+					
+					.mid-high {
+						background: url('../img/mid-high.png') no-repeat top left;
+					}
+					
+					.high {
+						background: url('../img/high.png') no-repeat top left;
+					}
+				
+			.region_top{
+				position: absolute;
+				display: block;
+				background: #C1272D;
+				width: 150px;
+				height: 150px;
+				bottom: 88px;
+				left: -55px;
+				
+				border-radius: 					 90px;
+					-webkit-border-radius: 90px;
+					-moz-border-radius: 	 90px;
+			}
+			
+			.region_text{
+				position: absolute;
+				width: 150px;
+				height: 150px;
+				font-size: 1.3em;
+				line-height: 6em;
+				text-align: center;
+				padding-top: 0.9em;
+				bottom: 88px;
+				left: -55px;
+			}
+	
+	/* hide */
+	.region_bottom, 
+	.region_border, 
+	.region_top, 
+	.region_text {
+		display: none;
+	}
+			
+	/* positioning */
+
+	#africa {
+		bottom: 39%;
+		left: 51%;
+	}
+
+	#australia {
+		bottom: 19%;
+		left: 82%;
+	}
+
+	#brazil {
+		bottom: 26%;
+		left: 31%;
+	}
+
+	#canada {
+		bottom: 71%;
+		left: 15%;
+	}
+
+	#hong-kong {
+		bottom: 50%;
+		left: 76%;
+		z-index: 50;
+	}
+
+	#india {
+		bottom: 49%;
+		left: 67%;
+	}
+
+	#shanghai {
+		bottom: 54%;
+		left: 78%;
+		z-index: 30;
+	}
+
+	#singapore {
+		bottom: 38%;
+		left: 73%;
+	}
+
+	#south-korea {
+		bottom: 58%;
+		left: 80%;
+		z-index: 20;
+	}
+
+	#taiwan {
+		bottom: 50.5%;
+		left: 78%;
+		z-index: 40;
+	}
+
+	#united-kingdom {
+		bottom: 71%;
+		left: 44.3%;
+	}
+
+		#united-kingdom .region_text {
+			line-height: inherit;
+			padding: 2.2em 0;
+		}
+
+	#usa {
+		bottom: 59%;
+		left: 17%;
+	}
+
+/* - - - info - - - */
+
+#la_info {
+}
+
+	#la_info .row {
+		margin-bottom: 5em;
+	}
+
+	#la_cover .pwrap,
+	#la_info .pwrap {
+		background: #3A4B52;
+		padding: 2em 2em 1em 2em;
+	}
+
+	#la_info [src$=".jpg"] { /* select jpgs */
+		background: #1D2629;
+		padding: 2em;
+	}
+		
+	.eyeball_length {
+		height: 5px;
+		background: #fff;
+		margin-bottom: 20px;
+		border-radius: 					 90px;
+			-webkit-border-radius: 90px;
+			-moz-border-radius: 	 90px;
+			
+	}
+		
+		#eyeball_length1 {
+			width: 64px;
+		}
+
+		#eyeball_length2 {
+			width: 87px;
+		}
+
+		#eyeball_length3 {
+			width: 91px;
+		}
+		
+#lightrays li {
+	list-style-type: none;
+	width: 40px;
+	height: 20px;
+	background: #FF5C57;
+	margin-bottom: 10px;
+}
+
+	#lightrays li:hover {
+		background:: #F93A3A;
+		width: 50px;
+	}
+		
+
+	
+
+/* - - - proof - - - */
+
+#la_proof {
+}
+
+	#la_proof .row {
+		margin-bottom: 2em;
+	}
+
+		.encase {
+			background: #FF5C57;
+			padding: 1em;
+		}	
+		
+			.case {
+				background: #FFF;
+				color: #222;
+				padding: 1em;
+				margin: 0;
+			}
+
+/* - - - our goal - - - */
+
+#la_goal {
+}
+	
+	#la_goal p {
+		background: #3A4B52;
+		padding: 2em 2em;
+	}
+	
+/* - - - footer - - - */
+
+
+
+
