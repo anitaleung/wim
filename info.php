@@ -5,9 +5,18 @@
 		<div class="row">
 		
 			<figure class="column large-5 left">
-				<img src="img/diagrams/eyehyp.png" alt="" class="left large-10" />
-				<img src="img/diagrams/eyereg.png" alt="" class="left large-10" />
-				<img src="img/diagrams/eyemyo.png" alt="" class="left large-10" />
+				<div id="eye-hyp" class="eye-stages">
+					<span class="label">Hyperopic</span>
+					<img src="img/diagrams/eye-hyp.png" alt="Hyperopic eye" class="left large-10" />
+				</div>
+				<div id="eye-reg" class="eye-stages">
+					<span class="label">Normal</span>
+					<img src="img/diagrams/eye-reg.png" alt="Normal Eye" class="left large-10" />
+				</div>
+				<div id="eye-myop" class="eye-stages">
+					<span class="label">Myopic</span>
+					<img src="img/diagrams/eye-myop.png" alt="Myopic Eye" class="left large-10" />
+				</div>
 			</figure>
 			
 			<div class="column large-7 to right">
@@ -15,8 +24,9 @@
 					<h2>So what's myopia?</h2>
 					<div class="pwrap">
 						<p>Well, I’m glad you asked.</p>
-						<p>“Myopia” is the scientific twin of “nearsightedness.” Someone who’s nearsighted can see near objects clearly while farther objects appear blurry.</p>
-						<p>People who are nearsighted have longer eyeballs than normal, whereas people who are hyperopic, or farsighted, have shorter eyeballs than normal.</p>
+						<p>“Myopia” is the fancy synonym of “nearsightedness.” Someone who’s nearsighted can see near objects clearly while farther objects appear blurry.</p>
+						<p>Hyperopia is just the opposite of this.</p>
+						<p>To someone who is hyperopic, or farsighted, close objects appear blurry while far objects look crystal clear.</p>
 					</div>
 				</div>
 			</div>
@@ -27,20 +37,23 @@
 		
 		<div class="row">
 			<div class="column large-4 to">
-				<div class="ti">
-					<figure>
+				<div class="ti eyeball-length-wrapper">
+					<figure class=>
+						<span class="label">Baby</span>
 						<figcaption class="text-right">17 mm</figcaption>
-						<div id="eyeball_length1" class="eyeball_length"></div>
+						<div id="eyeball-length1" class="eyeball-length"></div>
 					</figure>
 					
 					<figure>
+						<span class="label">Toddler</span>
 						<figcaption class="text-right">23 mm</figcaption>
-						<div id="eyeball_length2" class="eyeball_length"></div>
+						<div id="eyeball-length2" class="eyeball-length"></div>
 					</figure>
 					
 					<figure>
+						<span class="label">Adult</span>
 						<figcaption class="text-right">24 mm</figcaption>
-						<div id="eyeball_length3" class="eyeball_length"></div>
+						<div id="eyeball-length3" class="eyeball-length"></div>
 					</figure>
 				</div>
 			</div>
@@ -48,11 +61,11 @@
 			<div class="column large-7 right">
 				<h2>But wait, how’s this possible?</h2>
 				<div class="pwrap">
-					<p>As a baby, everyone is farsighted, and no group is more farsighted than another.</p>
+					<p>Everyone's born farsighted; no group is more farsighted than another.</p>
 					<ul>
 						<li>At birth, the eyeball is about 17 millimeters long</li>
 						<li>For the next three years, the eyeball quickly grows to about 23 mm</li>
-						<li>From age three to thirteen, the eye slowly elongates just a little from exposure to closework</li>
+						<li>From age three to thirteen, the child's eye slowly elongates just a little from exposure to closework</li>
 						<li>The eyeball should reach to about 24 mm by adulthood</li>
 					</ul>
 					<p>Many farsighted children simply outgrow farsightedness.</p>
@@ -68,8 +81,8 @@
 				<div class="large-8 center">
 					<h2 >Okay, what about nearsightedness?</h2>
 					<div class="pwrap">
-						<p>If the eye repeatedly stares at close objects for a long, long time, the cilliary muscle surrounding the lens undergoes a spasm. When this happens, the ciliary muscle lock up into a contracted state, stretching the choroid. When stetched long enough, the choroid, a layer in the eyeball wall, becomes thinner and larger. This extra space in the vitreous chamber is then filled with watery liquid created from a gland in the anterior chamber.</p>
-						<p>There’s no way to shrink the eye back ot its orginal size. Once the eye has officially changed sizes, it has changed sizes. The only way to have 20/20 vision again would be through surgery.</p>
+						<p>If the eye frequently stares at close objects for a long, long time, the <span class="emphasis">ciliary muscle</span> surrounding the lens undergoes a spasm. When this happens, the ciliary muscle locks up into a contracted state, stretching the choroid, a layer of the eyeball wall. When stetched long enough, the choroid becomes thinner and larger. This extra space in the vitreous chamber is then filled with watery liquid created from a gland in the anterior chamber.</p>
+						<p>There’s no way to shrink the eye back to its orginal size; once the eye has officially changed sizes, it has changed sizes. The only way to have 20/20 vision again would be by undergoing surgery.</p>
 					</div>
 				</div>
 			</div>

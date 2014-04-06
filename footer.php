@@ -12,5 +12,8 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
 	<script src="js/main.js"></script>
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

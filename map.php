@@ -1,6 +1,6 @@
 <section id="la_map">
 	<div class="row">
-		<h1 id="map-title" class="large-4 left text-left">Respectively, the myopic population in the given area</h1>
+		<h1 id="map-title" class="large-4 left text-left">The respective myopic population in the given area</h1>
 		<div id="map" class="large-12 right">
 			<img src="img/map4.png" alt="Map" class="large-12 right"/>
 			<ul>
